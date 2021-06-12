@@ -1,2 +1,3 @@
 /// @description window_center();
-window_center();
+//window_center();
+MakeSecondWindow();

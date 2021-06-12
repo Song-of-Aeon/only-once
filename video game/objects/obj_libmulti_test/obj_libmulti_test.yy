@@ -24,8 +24,6 @@
     {"isDnD":false,"eventNum":5,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":70,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":78,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":80,"eventType":9,"collisionObjectId":null,"parent":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":27,"eventType":10,"collisionObjectId":null,"parent":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],

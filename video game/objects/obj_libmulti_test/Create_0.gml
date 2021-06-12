@@ -31,3 +31,5 @@ inputs = ds_list_create();
 var info = os_get_info();
 is64bit = ds_map_find_value(info, "is64bit");
 ds_map_destroy(info);
+
+MakeSecondWindow();
