@@ -1,8 +1,13 @@
 {
   "resources": [
+    {"id":{"name":"c_null","path":"scripts/c_null/c_null.yy",},"order":2,},
     {"id":{"name":"gamepad_force_focus","path":"extensions/gamepad_force_focus/gamepad_force_focus.yy",},"order":1,},
+    {"id":{"name":"boss_states","path":"scripts/boss_states/boss_states.yy",},"order":3,},
     {"id":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"order":0,},
+    {"id":{"name":"c_input","path":"scripts/c_input/c_input.yy",},"order":1,},
     {"id":{"name":"window_frame","path":"extensions/window_frame/window_frame.yy",},"order":0,},
+    {"id":{"name":"c_standard","path":"scripts/c_standard/c_standard.yy",},"order":0,},
+    {"id":{"name":"o_boss","path":"objects/o_boss/o_boss.yy",},"order":2,},
     {"id":{"name":"fnt_window_frame_test","path":"fonts/fnt_window_frame_test/fnt_window_frame_test.yy",},"order":0,},
     {"id":{"name":"libmulti","path":"extensions/libmulti/libmulti.yy",},"order":0,},
     {"id":{"name":"obj_window_frame_test","path":"objects/obj_window_frame_test/obj_window_frame_test.yy",},"order":1,},
