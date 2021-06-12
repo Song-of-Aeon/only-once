@@ -13,7 +13,7 @@ if (window_frame_is_ready && !was_ready) {
 
 // if the close button was clicked (being overriden), close shortly:
 if (window_command_check(window_command_close)) {
-    leaving = 30;
+    leaving = 1;
 }
 
 // resize the game to fit the container window if it's visible
