@@ -1,5 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"gamepad_force_focus","path":"extensions/gamepad_force_focus/gamepad_force_focus.yy",},"order":1,},
+    {"id":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"order":0,},
+    {"id":{"name":"window_frame","path":"extensions/window_frame/window_frame.yy",},"order":0,},
+    {"id":{"name":"fnt_window_frame_test","path":"fonts/fnt_window_frame_test/fnt_window_frame_test.yy",},"order":0,},
+    {"id":{"name":"libmulti","path":"extensions/libmulti/libmulti.yy",},"order":0,},
+    {"id":{"name":"obj_window_frame_test","path":"objects/obj_window_frame_test/obj_window_frame_test.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -33,6 +39,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/libmulti.yy","order":15,"resourceVersion":"1.0","name":"libmulti","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
