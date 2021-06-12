@@ -18,7 +18,7 @@ function st_standard(){
 	
 }
 
-function c_basiccollision {
+function c_basiccollision (){
 
 if place_meeting(x + hspd, y, o_solid) {
     var i = 0;
