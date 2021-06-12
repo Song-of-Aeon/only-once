@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "c_standard",
+  "name": "st_standard",
   "tags": [],
   "resourceType": "GMScript",
 }
