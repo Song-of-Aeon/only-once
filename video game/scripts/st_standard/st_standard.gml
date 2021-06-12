@@ -4,9 +4,12 @@ function st_standard(){
 	var hput = left - right;
 	var vput = up - down;
 	
-	hspd = hput*5;
+	hspd = -hput*5;
 	if jump && !aerial {
 		vspd = -7;
+	}
+	if aerial {
+		vspd += .1;
 	}
 	
 	c_basiccollision() //same script file scroll down
@@ -18,24 +21,25 @@ function st_standard(){
 	
 }
 
-function c_basiccollision (){
+function c_basiccollision() {
 
-if place_meeting(x + hspd, y, o_solid) {
-    var i = 0;
-    while !place_meeting(x + sign(hspd), y, o_solid) {
-        x += sign(hspd);
-        i++;
-        if i > sprite_width {
-            break;
-        }
-    }
-    hspd = 0;
-}
+	if place_meeting(x + hspd, y, o_solid) {
+	    var i = 0;
+	    while !place_meeting(x + sign(hspd), y, o_solid) {
+	        x += sign(hspd);
+	        i++;
+	        if i > sprite_width {
+	            break;
+	        }
+	    }
+	    hspd = 0;
+	}
 
-if place_meeting(x, y + vspd, o_solid) {
-    while !place_meeting(x, y + sign(vspd), o_solid) {
-        y += sign(vspd);
-    }
-    vspd = 0;
-}
+	if place_meeting(x, y + vspd, o_solid) {
+	    while !place_meeting(x, y + sign(vspd), o_solid) {
+	        y += sign(vspd);
+	    }
+	    vspd = 0;
+		aerial = false
+	} else aerial = true
 }

@@ -3,6 +3,7 @@
     {"id":{"name":"c_null","path":"scripts/c_null/c_null.yy",},"order":2,},
     {"id":{"name":"gamepad_force_focus","path":"extensions/gamepad_force_focus/gamepad_force_focus.yy",},"order":1,},
     {"id":{"name":"boss_states","path":"scripts/boss_states/boss_states.yy",},"order":3,},
+    {"id":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},"order":5,},
     {"id":{"name":"obj_libmulti_test","path":"objects/obj_libmulti_test/obj_libmulti_test.yy",},"order":0,},
     {"id":{"name":"c_input","path":"scripts/c_input/c_input.yy",},"order":1,},
     {"id":{"name":"window_frame","path":"extensions/window_frame/window_frame.yy",},"order":0,},
@@ -23,6 +24,7 @@
     {"id":{"name":"s_ow","path":"sprites/s_ow/s_ow.yy",},"order":4,},
     {"id":{"name":"s_hooting3","path":"sprites/s_hooting3/s_hooting3.yy",},"order":3,},
     {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},"order":0,},
+    {"id":{"name":"Sprite9","path":"sprites/Sprite9/Sprite9.yy",},"order":17,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
