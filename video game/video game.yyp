@@ -12,6 +12,7 @@
     {"id":{"name":"o_boss","path":"objects/o_boss/o_boss.yy",},"order":3,},
     {"id":{"name":"fnt_window_frame_test","path":"fonts/fnt_window_frame_test/fnt_window_frame_test.yy",},"order":0,},
     {"id":{"name":"libmulti","path":"extensions/libmulti/libmulti.yy",},"order":0,},
+    {"id":{"name":"windowJank","path":"scripts/windowJank/windowJank.yy",},"order":4,},
     {"id":{"name":"o_bullet","path":"objects/o_bullet/o_bullet.yy",},"order":4,},
     {"id":{"name":"obj_window_frame_test","path":"objects/obj_window_frame_test/obj_window_frame_test.yy",},"order":1,},
     {"id":{"name":"s_hooting2","path":"sprites/s_hooting2/s_hooting2.yy",},"order":2,},

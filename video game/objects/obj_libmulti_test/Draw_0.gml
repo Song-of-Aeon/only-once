@@ -1,5 +1,5 @@
 /// @description Test draw
-
+/*
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
@@ -15,6 +15,7 @@ wndclass;lasterror;fps = " + string(wndclass) + ";" + string(libmulti_last_error
 + @"
 is64bit = " + string(is64bit));
 
+*/
 // newline symbol to keep it 1.4-2 compatible...
 var nl;
 nl = chr(10);
