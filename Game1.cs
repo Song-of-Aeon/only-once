@@ -66,6 +66,7 @@ namespace TestGame
             base.Initialize();
             new objects.Player(400,500);
             new objects.Enemy(400, 200);
+            new objects.Solid(500, 300);
         }
 
         /// <summary>

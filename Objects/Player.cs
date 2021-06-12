@@ -13,7 +13,12 @@ namespace TestGame.objects
 {
     class Player : GameObject
     {
+        float hspd = 0;
+        float vspd = 0;
+        int hput = 0;
+        int vput = 0;
         int speed = 8;
+        bool aerial = false;
         static Texture2D playerSprite;
         static Texture2D padoru;
         static List<IEnumerator> coroutineList;
@@ -39,7 +44,7 @@ namespace TestGame.objects
         public static void LoadContent()
         {
             ContentManager content = TestGame.Game1.game.Content;
-            playerSprite = content.Load<Texture2D>("player");
+            playerSprite = content.Load<Texture2D>("shooty");
             padoru = content.Load<Texture2D>("damnMaku");
             //base.LoadContent(content);
         }
@@ -54,16 +59,36 @@ namespace TestGame.objects
         }
         public override void Step()
         {
-            
-            foreach(IEnumerator e in coroutineList)
+
+            foreach (IEnumerator e in coroutineList)
             {
                 e.MoveNext();
             }
-            if (Keyboard.GetState().IsKeyDown(Keys.LeftShift)) speed = 3; else speed = 8;
-            if (Keyboard.GetState().IsKeyDown(Keys.Left)) position.X -= speed;
-            if (Keyboard.GetState().IsKeyDown(Keys.Right)) position.X += speed;
-            if (Keyboard.GetState().IsKeyDown(Keys.Up)) position.Y -= speed;
-            if (Keyboard.GetState().IsKeyDown(Keys.Down)) position.Y += speed;
+            if (Keyboard.GetState().IsKeyDown(Keys.Left)) hput = -1;
+            else if (Keyboard.GetState().IsKeyDown(Keys.Right)) hput = 1;
+            else hput = 0;
+            if (Keyboard.GetState().IsKeyDown(Keys.Up)) vput = -1;
+            else if (Keyboard.GetState().IsKeyDown(Keys.Down)) vput = 1;
+            else vput = 0;
+            hspd = hput * 5;
+            aerial = true;
+            /*foreach (Solid obj in Game1.stepList.OfType<Solid>())
+            {
+                int hboxSize = 9999;
+                if (GameObject.checkCollision(obj, new Rectangle((position + scale / 2).ToPoint() - new Vector2(hboxSize / 2).ToPoint(), new Point(hboxSize / 2))))
+                {
+                    aerial = false;
+                }
+            }*/
+            if (position.Y > 500) {
+                vspd = 0;
+                if (Game1.KeysPressed(Keys.S)) vspd = -7;
+            } else {
+                vspd += 0.3f;
+            }
+            
+            position.X += hspd;
+            position.Y += vspd;
             foreach (Danmaku obj in Game1.stepList.OfType<Danmaku>())
             {
                 int hboxSize = 4;
