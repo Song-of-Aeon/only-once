@@ -8,8 +8,8 @@ if (!libmulti_present()) {
 
 window_set_caption("libmulti demo.");
 window_set_min_width(640);
-window_set_min_height(240);
-window_set_size(640, 240);
+window_set_min_height(480);
+window_set_size(640, 480);
 //alarm[0] = 15; // window_center() delay
 
 wndclass = libmulti_init();

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_hooting",
+    "path": "sprites/s_hooting/s_hooting.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

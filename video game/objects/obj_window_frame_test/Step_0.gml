@@ -32,9 +32,7 @@ if (window_frame_get_visible()) {
         surface_resize(application_surface, w, h);
     }
 }
-if(keyboard_check_pressed(vk_f1)){
-	window_set_position(0,0);	
-}
+
 /*if (keyboard_check_pressed(vk_space)) {
     var l = window_frame_get_x();
     var t = window_frame_get_y();
@@ -46,3 +44,6 @@ if(keyboard_check_pressed(vk_f1)){
 
 /* */
 /*  */
+if count > 5 {
+window_set_position(0,0);	
+}count++;
