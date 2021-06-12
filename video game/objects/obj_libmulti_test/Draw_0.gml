@@ -80,6 +80,8 @@ for (var i = 0; i < ds_list_size(windows); i++) {
     // and here it ends
     
     surface_reset_target();
+	width = surface_get_width(global.otherone);
+	height = surface_get_height(global.otherone);
     
     if (buffer_get_size(buff) != (width * height * 4)) {
         buffer_resize(buff, width * height * 4);
@@ -87,7 +89,7 @@ for (var i = 0; i < ds_list_size(windows); i++) {
         buffer_poke(buff, buffer_get_size(buff) - 1, buffer_u8, 0);
     }
     
-    buffer_get_surface(buff, surf, 0);
+    buffer_get_surface(buff, global.otherone, 0);
     surface_free(surf);
     
     // send to the window
