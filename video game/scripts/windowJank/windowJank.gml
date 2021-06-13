@@ -6,8 +6,8 @@ function MakeSecondWindow(){
 var _defw, _defh;
 
 // change this to your liking?
-_defw = 800;
-_defh = 600;
+_defw = 640;
+_defh = 480;
 
 var n;
 
@@ -18,7 +18,8 @@ global.window = libmulti_create_window(
     320, 240, // min width min height, something regular
     -1, -1 // max width max height, we don't care
 );
-libmulti_set_x(global.window,200);
+libmulti_set_x(global.window,900);
+libmulti_set_y(global.window,300);
 
 ds_list_add(windows, global.window);
 ds_list_add(buffers, buffer_create(_defw * _defh * 4, buffer_fixed, 1));
