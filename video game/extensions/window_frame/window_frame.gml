@@ -33,7 +33,6 @@ if (global.window_frame_await < 2 && ++global.window_frame_await >= 2) {
 	buffer_write(b, buffer_s32, window_get_width());
 	buffer_write(b, buffer_s32, window_get_height());
 	buffer_write(b, buffer_string, window_get_caption());
-	show_message("!");
 	if (window_frame_init_raw(window_handle(), buffer_get_address(b))) {
 		global.window_frame_ready = true;
 		global.window_frame_bound = true;
