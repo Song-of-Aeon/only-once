@@ -2,16 +2,20 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function st_standard(){
 	var hput = left - right;
-	var vput = up - down;
 	
 	hspd = -hput*5;
+	
+	if !place_meeting(x, y+1, o_solid) {
+	    vspd += .2;
+	    aerial = true;
+	} else { //.gravity
+	    aerial = false;
+	    y = floor(y);
+	    vspd = 0;
+	}
 	if jump && !aerial {
 		vspd = -7;
 	}
-	if aerial {
-		vspd += .1;
-	}
-	
 	c_basiccollision() //same script file scroll down
 	x += hspd;
 	y += vspd;
