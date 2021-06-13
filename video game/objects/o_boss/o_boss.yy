@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_boss",
+    "path": "sprites/s_boss/s_boss.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

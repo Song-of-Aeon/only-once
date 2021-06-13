@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function st_standard(){
-	var hput = left - right;
+	hput = left - right;
 	
 	hspd = -hput*5;
 	
@@ -45,5 +45,5 @@ function c_basiccollision() {
 	    }
 	    vspd = 0;
 		aerial = false
-	} else aerial = true
+	} //aerial = true
 }

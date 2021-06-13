@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_view",
+    "path": "objects/o_view/o_view.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

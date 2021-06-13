@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_hooting",
-    "path": "sprites/s_hooting/s_hooting.yy",
+    "name": "s_shooty",
+    "path": "sprites/s_shooty/s_shooty.yy",
   },
   "solid": false,
   "visible": true,
