@@ -1,2 +1,2 @@
-x = o_solid.x;
-y = o_solid.y;
+x = o_solid2.x;
+y = o_solid2.y;
