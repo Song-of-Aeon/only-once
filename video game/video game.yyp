@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"raw_keystroke","path":"extensions/raw_keystroke/raw_keystroke.yy",},"order":2,},
     {"id":{"name":"bk_grad","path":"sprites/bk_grad/bk_grad.yy",},"order":2,},
     {"id":{"name":"c_null","path":"scripts/c_null/c_null.yy",},"order":2,},
     {"id":{"name":"s_unknown","path":"sprites/s_unknown/s_unknown.yy",},"order":6,},
