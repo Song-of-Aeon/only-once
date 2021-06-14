@@ -10,3 +10,10 @@ function st_shootyou() {
 	}
 	image_index = floor(((count+30)%60)/8);
 }
+function st_laseryou() {
+	count++;
+	if count % 300 = 0 {
+		instance_create_layer(x, y-sprite_height/2, 0, o_laser)
+	}
+	image_index = floor(((count+150)%300)/8);
+}
