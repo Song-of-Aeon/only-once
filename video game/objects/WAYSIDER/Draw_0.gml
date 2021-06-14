@@ -13,4 +13,5 @@ if hput != 0 {
 if !animating {
 	image_speed = hspd/15;
 }
+//draw_text(300, 300, jump);
 draw_self();

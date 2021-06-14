@@ -1,0 +1,18 @@
+- background
+- parallax
+- boss moving
+- boss hp bar
+- boss attacks
+ = big laser
+ = at least two more attacks
+- better input
+- audio
+- win condition
+ = ending game
+ = get a score at the end
+- what happens if you fall off
+- platforms a bit less buggy
+- starting game
+- tutorial
+- bullet sprites
+- my bullet sprites
