@@ -6,3 +6,7 @@ state = st_standard;
 aerial = true;
 global.startx = window_get_x();
 global.starty = window_get_y();
+damage = 0;
+time = 0;
+inv = false;
+animating = false;

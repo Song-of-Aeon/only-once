@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b702365a-d7aa-4639-b5a5-b51ad7e9245c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "video game",
-    "path": "video game.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sprite9",

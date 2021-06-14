@@ -12,17 +12,40 @@ function st_standard(){
 	    aerial = false;
 	    y = floor(y);
 	    vspd = 0;
+		y = instance_nearest(x, y, o_solid).y
 	}
 	if jump && !aerial {
-		vspd = -7;
+		if yprevious - y > 1 {
+			vspd = -11;
+		} else {
+			vspd = -7;
+		}
 	}
 	c_basiccollision() //same script file scroll down
 	x += hspd;
 	y += vspd;
 	if attack {
-		instance_create_layer(x, y, 1, o_bullet);
+		with instance_create_layer(x, y-sprite_height/2, 0, o_mybullet) {
+			hspd = 16*other.image_xscale;
+		}
+		image_index = 0;
+		image_speed = .8;
+		animating = true;
+		if !aerial {
+			sprite_index = s_shooty;
+			image_speed = .6;
+		}
 	}
-	
+	if place_meeting(x, y, o_hurty) && !inv {
+		inv = true;
+		image_alpha = .5;
+		damage++;
+		vspd = -3.5;
+		y -= 3;
+		aerial = true;
+		alarm[0] = 30;
+	}
+	time++;
 }
 
 function c_basiccollision() {
