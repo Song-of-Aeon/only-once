@@ -6,7 +6,7 @@ if (!libmulti_present()) {
     exit;
 }
 
-window_set_caption("libmulti demo.");
+window_set_caption("move me!");
 window_set_min_width(640);
 window_set_min_height(480);
 window_set_size(640, 480);
@@ -33,3 +33,9 @@ is64bit = ds_map_find_value(info, "is64bit");
 ds_map_destroy(info);
 
 MakeSecondWindow();
+
+global.bitchass = surface_create(640, 480);
+surface_set_target(global.bitchass);
+draw_set_colour(c_purple);
+draw_rectangle(0, 0, 640, 480, false);
+surface_reset_target();

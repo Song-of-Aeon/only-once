@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-draw_text(20,120,keyboard_check_raw(1));
+draw_text(0, 0, libmulti_get_x(0));
+draw_text(0, 50,libmulti_get_y(0));
